@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+
+  <title>IP Address Tracker</title>
+
+  <!-- css stylesheet 👍 -->
+   <link rel="stylesheet" href="style.css">
+   <!-- css stylesheet for map -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+   <!-- css stylesheet  -->
+</head>
+<body> 
+           <div class="header"> 
+
+                <div class="title"> IP Address Tracker </div>
+                
+                <div class="search-section">
+                    <input type="text" value="" id="search-bar" class="search-bar" 
+                    placeholder="Search for any IP address or domain"><button type="submit" id="search-icon" class="search-icon">
+                    <img src="icon-arrow.svg" alt=""></button>
+              </div>
+               
+              <div class="inputSection"> 
+                  
+                  <div class="ip"> <h6>IP Address</h6> <span id="ipAddres"> </span></div>
+
+                  <div class="loc"><h6>Location</h6> <span id="location"> </span></div>
+                  
+                  <div class="tiz"> <h6> Timezone </h6> <span id="timeZone"> </span> </div>
+                  
+                  <div class="isp"><h6> ISP </h6> <span id="ispname"></span></div>
+             </div>
+
+          </div> 
+          <div id="mapid"></div>
+          
+
+        
+<script src="script.js"></script>
+</body>
+</html>
